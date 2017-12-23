@@ -10,7 +10,6 @@ export default function Pet(props){
                 </header>
                     <main>
                         <dl>
-                
                             <dt>Sex:</dt>
                             <dd>{props.sex}</dd>
                             <dt>Age: </dt>

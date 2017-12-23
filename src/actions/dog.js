@@ -37,7 +37,7 @@ export const fetchDogError = error => ({
 
 export const adoptDog = () => dispatch => {
     dispatch(adoptDogRequest());
-    fetch(`${REACT_APP_API_BASE_URL}/dog`).then(res => {
+    fetch(`${REACT_APP_API_BASE_URL}/dog`, {method: 'DELETE'}).then(res => {
         if(!res.ok) {
             return Promise.reject(res.statusText)
         }
