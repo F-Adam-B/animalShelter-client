@@ -1,8 +1,7 @@
 import React from 'react'
 
 export default function Pet(props){
-    
-    console.log(props)
+
         return (
             <section>
                 <header>
@@ -11,8 +10,7 @@ export default function Pet(props){
                 </header>
                     <main>
                         <dl>
-                            <dt>Name'</dt>
-                            <dd>{props.name}</dd>
+                
                             <dt>Sex:</dt>
                             <dd>{props.sex}</dd>
                             <dt>Age: </dt>
@@ -22,7 +20,7 @@ export default function Pet(props){
                             <dt>Story</dt>
                             <dd>{props.story}</dd>
                         </dl>
-                        <button type= 'button'>Adopt</button>
+                        <button onClick={() => props.onAdoptPet()} type= 'button'>Adopt</button>
                     </main>
             </section>
         )
